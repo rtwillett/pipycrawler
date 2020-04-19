@@ -1,0 +1,8 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+  scraper:
+    build: .
+    ports:
+      - '5000'
